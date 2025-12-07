@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+     <link rel="stylesheet" href="nuture.css"
+    </head>
+    <body>
+        <div class="page">
+            <header class="site-header">
+                <div class="logo"><span>Nuture Future</span></div>
+                <nav class="nav">
+                    <a href="#home">الرئيسية</a>
+                    <a href="#importance">اهمية البيئة</a>
+                    <a href="#pollution">أضرار التلوث</a>
+                    <a href="#tips">نصايح</a>
+                    <a href="#carpon">البصمة الكربونية</a>
+                </nav>
+                <button class="menu-btn">=</button>
+            </header>
+
+            <main>
+
+                <section id="home" class="hero">
+                    <h1>أهلا بيك فى <span class="accent">Nuture Future</span></h1>
+
+                    <p class="lead">موقع بسيط بيكلمك عن البيئة بالعامية المصرية - لية نهتم بيها, اية اضرار التلوث , وازاى نقدر نعمل تغيرات يومية بسيطة</p>
+
+                    <div class="hero-action">
+                        <a href="3tips" class="btn">نصايح سريعة</a>
+                        <a href="#carbon" class="btn outline">البصمة الكربونية</a>
+                    </div>
+                </section>
+
+                <section id="importance" class="card section">
+                    <h2>لية البيئة مهمة فعلا؟</h2>
+
+                    <p>البيئة هى المكان البنعيش فيه - الهوا البنتنفسه , و المية الى بنشربها والاكل البناكله. لو خسرنا البيئة هنخسر مستقبلنا وصحتنا</p>
+
+                    <ul>
+                      <li>الهواء النضيف = صحة أحسن</li>
+                      <li>مية أنضف = أمراض أقل</li>
+                      <li>أرض صحية = أكل أفضل</li>
+                    </ul>
+                </section>
+
+                <section id="pollution" class="card section">
+                    <h2>أضرار التلوث</h2>
+                    <br><br>
+                    <h3>تلوث الهواء</h3>
+
+                    <p>دخان االمصانع وعوادم العربيات بيخلى الهواء ملوث, و ده بيأثر على الرئة خصوصا للاطفال و كبار السن</p>
+                     <br><br>
+
+                     <h3>تلوث المية</h3>
+
+                     <p>رمى المخلفات فى المصارف و الانهار بيأثر على الاسماك و الغزاء</p>
+                     <br><br>
+
+                     <h3>البلاستيك و البحر</h3>
+                      
+                     <p>البلاستيك بياخد سنين على ما يتحلل وبيضر الكائنات البحرية و بيرجعتنا فى الاكل</p>
+                </section>
+
+                <section id="tips" class="card section">
+                    <h2>نصايح بسيطة</h2>
+                    <div class="tips-grid">
+                        <div class="tip">اقفل النور لما تخرج من الاوضة</div>
+                        <br>
+                        <div class="tip">استحدم الشنطة القماش بدل البلاستيك</div>
+                        <br>
+                        <div class="tip">افصل الزبالة قابل \ غير قابل لاعادة التدوير</div>
+                        <br>
+                        <div class="tip">ازرع نبتة حتى لو صغيرة فى البلكونة</div>
+                        <br>
+                        <div class="tip">اصلح الحاجات بدل مترميها</div>
+                        <br>
+                        <div class="tip">امشى او استخدم المواصلات لو المسافة قصيرة</div>
+                    </div>
+
+                    <div class="random-tip">
+                        <button id="randomTipBtn" class="btn">نصيحة عشوائية</button>
+                        <p id="randomTipText" class="tip-text"></p>
+                    </div>
+                </section>
+
+                <section id="carbon" class="card section">
+                    <h2>احسب بصمتك الكربونية</h2>
+                    <p>جاوب على الاسئلة دى بصراحة</p>
+
+                    <div class="form-row">
+                        <label>بتروح المدرسة \ الشغل ازاى</label>
+                        <select id="transport">
+                        <option value="0">يمشى او بعجلة</option>
+                        <option value="1">مواصلات عامة</option>
+                        <option value="2">بعربية خاصة</option>
+                        </select>
+                    </div>
+
+                    <br><br>
+
+                    <div class="form-row">
+                        <label>بتفصل النور والاجهزة لما متستخدمهاش</label>
+                        <select id="electric">
+                            <option value="0">ايوة دايما</option>
+                            <option value="1">احيانا بنسى</option>
+                            <option value="2">لأ دايما شغالة</option>
+                        </select>
+                    </div>
+
+                    <br><br>
+
+                    <div class="form-row">
+                        <label>بتستخدم حاجات بلاستيك مرة واحدة وترميها؟</label>
+                        <select id="plastic">
+                            <option value="0">لا بحاول اقلل</option>
+                            <option value="1">احيانا</option>
+                            <option value="2">ايوة كتير</option>
+                        </select>
+                    </div>
+
+                    <br><br>
+
+                    <div class="form-action">
+                        <button id="calcBtn" class="btn">احسب بصمتى</button>
+                        <button id="resetBtn" class="btn outline">رجع تانى</button>
+                    </div>
+
+                    <div id="carbonResult" class="result-box" aria-live="polite"></div>
+                </section>
+            </main>
+            <br><br>
+            <footer class="site-footer">OMAR MOHAMED REFAAT</footer>
+            <script src="NUTURE.js"></script>
+    </body>S
+</html>
