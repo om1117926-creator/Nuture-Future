@@ -1,0 +1,138 @@
+:root{
+    --bg: #e8f5e9;
+    --card: #ffffff;
+    --muted: #4a4a4a;
+    --btn-bg: #388e3c;
+    --accent: #2e7d32;
+}
+
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    font-family: "cairo", sans-serif;
+    background: linear-gradient(180deg, #d7f3dc 0%, #eef8ea 100%); 
+    color: var(--muted);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: var(--accent);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.logo{font-weight: 700;font-size: 18px;}
+.logo span{margin-right: 8px;}
+
+.nav{
+    display: flex;
+    gap: 12px;
+}
+
+.nav a{
+    color: #e8f5e9;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.menu-btn{display: none;background: transparent;border: none;color: #fff;font-size: 22px;}
+
+.hero{
+    padding: 36px 18px;
+    text-align: center;
+}
+
+.hero h1{font-size: 28px;margin: 8px 0;color:var(--accent)}
+.lead{max-width: 780px;margin:8px auto 18px;font-size: 16px;color:#2f4f32}
+
+.btn{
+    display: inline-block;
+    background: var(--btn-bg);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn.outline{
+    background: transparent;
+    color: var(--btn-bg);
+    border: 2px solid var(--btn-bg);
+}
+
+.section{padding: 18px;margin: 14px auto;max-width: 920px;}
+
+.card{
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(46, 125, 50, 0.08);
+    padding: 18px;
+}
+
+.tips_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.tip{
+    background: #f6fff6;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(20,90,30,0.03);
+}
+
+.random-tip{margin-top: 14px;}
+.tip-text{margin-top: 10px;font-weight: 600;color: var(--accent);}
+
+.result-box{
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #f0fff0;
+    border: 1px solid #dff5df;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.sitr-footer{
+    text-align: crnter;
+    padding: 14px;
+    background: transparent;
+    margin-top: 18px;
+    color: #2f4f32;
+}
+
+.page{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (max-width: 720px){
+    .nav {
+         display: none; 
+    }
+    .menu-btn {
+         display: block; 
+        }
+    .tips_grid {
+         grid-template-columns: 1fr;
+         }
+    .hero h1 { 
+        font-size: 22px;
+     }
+}
