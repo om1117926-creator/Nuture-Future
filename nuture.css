@@ -121,18 +121,3 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
-
-@media (max-width: 720px){
-    .nav {
-         display: none; 
-    }
-    .menu-btn {
-         display: block; 
-        }
-    .tips_grid {
-         grid-template-columns: 1fr;
-         }
-    .hero h1 { 
-        font-size: 22px;
-     }
-}
